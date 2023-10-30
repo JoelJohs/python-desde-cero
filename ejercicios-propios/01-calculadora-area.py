@@ -7,12 +7,13 @@ Ingrese una opcion
 3.- Area de un circulo
 4.- Salir
 
-"""
-aux = input(mensaje)
+"""  # Mensaje que se muestra al usuario
+
+aux = input(mensaje)  # Variable auxiliar que almacena la opcion del usuario
 print("")
 print("")
 
-while True:
+while True:  # Bucle infinito
     if aux == "1":
         lado = float(input("Ingrese el lado del cuadrado: "))
         area = lado * lado
@@ -40,4 +41,10 @@ while True:
         print("")
     elif aux == "4" or aux.lower() == "salir":
         print("Saliendo del programa...")
-        break
+        break  # Rompe el bucle
+    else:
+        print("Opcion invalida")
+        print("")
+        aux = input(mensaje)
+        print("")
+        print("")
